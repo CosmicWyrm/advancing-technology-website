@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Advancing Technology|Tickets</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav>
+            <div class="wrapper">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tickets.html">Tickets</a></li>
+                </ul>
+            </div><!-- end .wrapper -->
+        </nav>
+        <header>
+            <div class="wrapper">
+                <img src="images/hero-symbol.jpg" alt="MacBook with Code">
+                <h1>Advancing Technology</h1>
+                <h2>1st Annual Budding Developers Conference</h2>
+                <p>Orlando, FL &mdash; October 11, 2019</p>
+            </div><!-- end .wrapper -->
+        </header>
+        <section id="order-tickets">
+            <div class="wrapper">
+                <h2>Get your tickets!</h2>
+                <form action="" method="post">
+                    <div class="wrapper">
+                        <h3>Your info</h3>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="NAME" required>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="EMAIL" required>
+                        <h3>Package</h3>
+                        <div id="select-ticket">
+                            <select name="ticketType" id="ticketType">
+                                <option value="standard">Standard &mdash; $149</option>
+                                <option value="premium">Premium &mdash; $249</option>
+                            </select>
+                        </div><!-- end .select-ticket -->
+                        <div id="package-types">
+                            <input type="checkbox" name="package1" value="lodging"> Add on lodging &mdash; $99
+                            <br>
+                            <input type="checkbox" name="package2" value="food"> Add on meals &mdash; $119
+                        </div><!-- end #package-types -->
+                        <div id="submit">
+                            <input type="submit" value="Submit">
+                        </div><!-- end #submit -->
+                    </div><!-- end .wrapper -->
+                </form>
+            </div><!-- end .wrapper -->
+        </section>
+        <footer>
+            <div class="wrapper">
+                &copy;2019
+            </div><!-- end .wrapper -->
+        </footer>
+    </div><!-- end #wrapper -->
+</body>
+
+</html>
