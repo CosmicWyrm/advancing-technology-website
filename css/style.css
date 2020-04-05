@@ -297,7 +297,16 @@ label {
     padding: 7px 20px;
 }
 
-@media only screen and (max-width: 480px) {
+/***** MEDIA QUERIES *****/
+@media only screen and (max-width: 1199px) {
+    
+}
+
+@media only screen and (max-width: 767px) {
+    
+}
+
+@media only screen and (max-width: 479px) {
     h1,
     h2,
     h3,
@@ -318,18 +327,6 @@ label {
 
     h3 {
         font-size: 20px;
-    }
-
-    h4 {
-        font-size: 24px;
-    }
-
-    h5 {
-        font-size: 20px;
-    }
-
-    h6 {
-        font-size: 16px;
     }
 
     img {
@@ -543,9 +540,17 @@ label {
         border: none;
         box-shadow: none;
     }
+    
+    #order-tickets .wrapper{
+        padding: 20px;
+    }
 
     label {
         display: none;
+    }
+    
+    .form-wrapper {
+        padding: 0;
     }
 
     #name, #email {
@@ -557,12 +562,12 @@ label {
 
     #select-ticket {
         margin: 0 auto;
-        width: 40%;
+        width: 100%;
     }
 
     #package-types {
         margin: 25px auto;
-        width: 50%;
+        width: 100%;
     }
 
     #submit {
@@ -578,5 +583,29 @@ label {
         border-style: none;
         padding: 7px 20px;
         align-items: center;
+    }
+        
+    #flex-ticket {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #flex-ticket #select-ticket {
+        flex-basis: 100%;
+        flex-shrink: 0;
+        text-align: center;
+    }
+    
+    #flex-ticket #package-types {
+        flex-basis: 100%;
+        flex-shrink: 0;
+        text-align: center;
+    }
+    
+    #flex-ticket #submit {
+        flex-basis: 100%;
+        flex-shrink: 0;
+        text-align: center;
     }
 }
